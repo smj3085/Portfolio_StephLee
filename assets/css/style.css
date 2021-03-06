@@ -4,15 +4,20 @@
     margin: 0;
 }
 
+:root {
+    --darkgrey: #33393f;
+    --whitesmoke: #ffffff;
+}
+
 body {
-    background-color: white;
+    background-color: var(--darkgrey);
 }
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS' Helvetica, sans-serif; 
-    background-color: white;
-    color: black;
+    background-color: var(--darkgrey);
+    color: var(--whitesmoke);
 }
 
 h1 {
@@ -21,10 +26,11 @@ h1 {
 }
 
 nav {
-    padding-top: 30px;
+    padding-top: 15px;
+    margin-right: 20px;
     float: right;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 ul {
@@ -33,56 +39,62 @@ ul {
 
 li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 50px;
 }
 
 a {
-    color: darkblue;
+    color: var(--whitesmoke);
+    text-decoration: none;
 }
 
 p {
     font-size: 16px;
-    color: black;
+    color: var(--whitesmoke);
 }
 
 .subtitle {
-    height: 200px;
+    height: 500px;
     width: 100%;
     margin-bottom: 30px;
-    background-color: burlywood;
+    background-image: url("../images/abstract_background.jpg");
     background-size: cover;
     background-position: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-/* To fix up */
-.subtitle h2 {
-    float: center;
-}
-
-#about-me {
-    margin-left: 20px;
+.Blurb section {
     padding: 20px;
+    margin-bottom: 20px;
     clear: both;
-    float: left;
-    width: 20%;
+    width: 100%;
     height: 100%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: teal;
-    border: 3px solid blueviolet;
+    background-color: var(--darkgrey);
+    border: 3px solid aliceblue;
 }
 
-h2 {
+.Blurb h2 {
     margin-bottom: 10px;
     text-align: center;
-    color: black;
+    color: aliceblue;
+    float: left;
 }
 
-#work {
-    margin-right: 20px;
-    float: right;
-    width:50%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    background-color: pink;
-    border: 3px solid blue;
+.Blurb img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100px;
+    border: 1px solid whitesmoke;
+    float: left;
 }
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        width: 75%;
+    }
