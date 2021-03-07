@@ -39,7 +39,7 @@ ul {
 
 li {
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 25px;
 }
 
 a {
@@ -53,16 +53,25 @@ p {
 }
 
 .subtitle {
-    height: 500px;
+    height: 250px;
     width: 100%;
     margin-bottom: 30px;
-    background-image: url("../images/abstract_background.jpg");
+   background-color: var(--whitesmoke);
     background-size: cover;
     background-position: center;
+    opacity: 70%;
 }
 
-.Blurb section {
-    padding: 20px;
+.subtitle img {
+    display: block;
+    margin: 10px auto;
+    max-height: 200px;
+    border: 1px solid whitesmoke;
+    float: left;
+}
+
+.panel {
+    padding: 30px;
     margin-bottom: 20px;
     clear: both;
     width: 100%;
@@ -72,19 +81,48 @@ p {
     border: 3px solid aliceblue;
 }
 
-.Blurb h2 {
-    margin-bottom: 10px;
-    text-align: center;
+.panel h2 {
+    display: flex;
     color: aliceblue;
-    float: left;
+    width: 30%;
+    border-right: solid 3px var(--whitesmoke);
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-right: 20px;
 }
 
-.Blurb img {
+.panel {
+    display: flex;
+}
+
+.content {
+    width: 70%;
+
+}
+
+
+.card {
+    background-color: antiquewhite;
+    border: black 3px solid;
+}
+
+.card.big {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
     display: block;
-    margin: 10px auto;
-    max-width: 100px;
-    border: 1px solid whitesmoke;
-    float: left;
+}
+
+.card.small {
+    width: 48%;
+    height: 100px;
+    display: inline-block;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
 }
 
 footer {
@@ -94,7 +132,6 @@ footer {
     text-align: center;
 }
 
-@media screen and (min-width: 992px) {
-    header {
-        width: 75%;
-    }
+.card.big:hover {
+    box-shadow: inset 0px 0px 8px violet, 0 0 15px violet;
+}
