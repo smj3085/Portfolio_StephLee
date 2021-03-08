@@ -5,19 +5,23 @@
 }
 
 :root {
-    --darkgrey: #33393f;
-    --whitesmoke: #ffffff;
+    --lightlook: #f2eedf;
+    --lightblue: #b8ccf2;
 }
 
 body {
-    background-color: var(--darkgrey);
+    background-color: var(--lightlook);
 }
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS' Helvetica, sans-serif; 
-    background-color: var(--darkgrey);
-    color: var(--whitesmoke);
+    background-color: var(--lightlook);
+    color: black;
+    border-bottom: black solid 2px;
+    position: fixed;
+    top: 0; 
+    width: 100%;
 }
 
 h1 {
@@ -26,6 +30,7 @@ h1 {
 }
 
 nav {
+   display: flex;
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -43,81 +48,97 @@ li {
 }
 
 a {
-    color: var(--whitesmoke);
+    color: black;
     text-decoration: none;
 }
 
 p {
     font-size: 16px;
-    color: var(--whitesmoke);
+    color: black;
+}
+
+main {
+    margin-top: 50px;
 }
 
 .subtitle {
-    height: 250px;
+    height: 300px;
     width: 100%;
-    margin-bottom: 30px;
-   background-color: var(--whitesmoke);
+    margin-bottom: 15px;
+    background-color: var(--lightlook);
     background-size: cover;
     background-position: center;
-    opacity: 70%;
+    padding: 50px;
 }
 
 .subtitle img {
     display: block;
-    margin: 10px auto;
-    max-height: 200px;
-    border: 1px solid whitesmoke;
-    float: left;
+    width: 200px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid var(--lightblue);
+    border-radius: 25px;
 }
 
 .panel {
+    display: flex;
     padding: 30px;
     margin-bottom: 20px;
     clear: both;
     width: 100%;
     height: 100%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--darkgrey);
-    border: 3px solid aliceblue;
+    font-size: 20px;
+    background-color: var(--lightlook);
+    border-top: 3px solid aliceblue;
 }
 
 .panel h2 {
     display: flex;
-    color: aliceblue;
+    color: black;
     width: 30%;
-    border-right: solid 3px var(--whitesmoke);
+    border-right: solid 3px var(--lightblue);
     align-items: center;
-    justify-content: flex-end;
     padding: 10px;
     margin-right: 20px;
 }
 
-.panel {
-    display: flex;
+.panel p {
+    font-size: 20px;
 }
 
 .content {
     width: 70%;
-
+    padding: 10px;
 }
 
-
 .card {
-    background-color: antiquewhite;
     border: black 3px solid;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.card p {
+    color: white;
 }
 
 .card.big {
     width: 100%;
-    height: 100px;
+    height: 400px;
     margin-bottom: 10px;
     display: block;
-}
+    background-image: url('../images/Horiseon_SLEE.png');
+}                       
 
 .card.small {
     width: 48%;
     height: 100px;
     display: inline-block;
+    background-image: url('../images/comingsoon.jpeg');
 }
 
 .card-row {
@@ -125,13 +146,27 @@ p {
     justify-content: space-between;
 }
 
+.panel ul {
+    list-style-type: none;
+}
+
+.panel li {
+    display: inline-block;
+    margin-inline: 40px;
+    color: blue;
+}
+
 footer {
-    padding: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
     clear: both;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    background-color: black;
+    color: white
 }
 
 .card.big:hover {
-    box-shadow: inset 0px 0px 8px violet, 0 0 15px violet;
+    box-shadow: inset 0px 0px 8px white, 0 0 15px white;
+    font-style: italic;
 }
