@@ -14,6 +14,8 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
     font-family: 'Trebuchet MS', Helvetica, sans-serif; 
     background-color: var(--lightlook);
@@ -27,8 +29,6 @@ h1 {
 }
 
 nav {
-    display: flex;
-    float: right;
     padding-top: 15px;
     margin-right: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -108,16 +108,17 @@ main {
 }
 
 .card {
+    position: relative;
     border: black 3px solid;
 }
 
-.card h3 {
-    font-size: 20px;
-    color: white;
-}
-
-.card p {
-    color: white;
+.card-title {
+    position: absolute;
+    bottom: 20px;
+    border: 3px solid var(--lightlook);
+    background-color: var(--lightlook);
+    font-size: 15px;
+    color: black;
 }
 
 .card.big {
@@ -145,14 +146,9 @@ main {
     opacity: 0.5;
 }
 
-
-.panel li {
-    display: inline-block;
-    margin-inline: 50px;
-}
-
-#contact-me {
-    text-align: center;
+.panel ul {
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
 }
 
@@ -181,8 +177,7 @@ nav li:hover {
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-        float: none;
+    header {
         flex-direction: column;
     }
 
@@ -197,4 +192,22 @@ nav li:hover {
     .panel li {
         display: block;
     }
+
+    .card.small {
+        width: 100%;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .panel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .panel h2 {
+        width: 100%;
+        border-right: none;
+        border-bottom: solid 3px var(--lightblue);
+    }
+}
+
