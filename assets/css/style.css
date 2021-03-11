@@ -148,7 +148,7 @@ main {
 
 .panel ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style-type: none;
 }
 
@@ -198,7 +198,7 @@ nav li:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     .panel {
         display: flex;
         flex-direction: column;
@@ -208,6 +208,10 @@ nav li:hover {
         width: 100%;
         border-right: none;
         border-bottom: solid 3px var(--lightblue);
+    }
+
+    .card.big {
+        height: 200px;
     }
 }
 
