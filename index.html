@@ -7,18 +7,24 @@
   <title>Stephanie Lee Portfolio page</title>
   <link rel="stylesheet" href="assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
     <header>
-        <h1>STEPHANIE LEE</h1>
+        <h1>Stephanie Lee</h1>
         <nav>
             <ul>
                 <li>
-                    <a href="#about-me">About Me</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#work">Work</a>
+                    <!-- link to projects broken -->
+                    <a href="#projects">Projects</a>
                 </li>    
                 <li>
                     <a href="#contact-me">Contact Me</a>
@@ -31,67 +37,44 @@
     </header>
 
 <main>
-<section class="subtitle">
-    <img src="assets/images/Stephanieprofile.jpeg" alt="Stephanie">
-</section>
-
-<section class="panel" id="about-me">
-    <h2>About me</h2>
-    <div class="content">
+<section class="subtitle" id="about">
+    <img src="assets/images/Stephanieprofile.jpeg" alt="Steph">
+    <div class="aboutMe">
+        <h2 class="aboutTitle">Hi, I'm Steph Lee!</h2>
         <p>
-            Hi! I'm Stephanie Lee and I'm a junior web developer based in Sydney, Australia. <br>
-            I've previously worked in the aviation and financial services industries and look forward to starting a new career in programming.
-            I am currently studying a full-stack bootcamp course.
+            I'm a junior web developer based in Sydney, Australia. <br>
+            I've previously worked in the aviation and financial services industries and look forward to starting a new career in programming. <br>
+            I am currently studying a full-stack bootcamp course scheduled to finish in August 2021.
         </p>
     </div>
 </section>
 
 <!-- Work section -->
-<section class="panel">
-    <h2>Work</h2>
-    <div class="content" id="work">
-        <a href="https://smj3085.github.io/Homework1_SLEE/" class="card big">
-            <div class="card-title">
-                <h3 class="card-header">Refactoring</h3>
-                <div class="card-body">
-                    <p>Refactoring existing code</p>
-                </div>
-            </div>
-        </a>
-        <div class="card-row">
-            <div class="card small">
-                <div class="card-title">
-                    <h3 class="card-header">Coming soon</h3>
-                    <div class="card-body">
-                        <p>Coming soon...</p>
-                </div>
-            </div>
-
-            </div>
-            <div class="card small">
-                <div class="card-title">
-                    <h3 class="card-header">Coming soon</h3>
-                    <div class="card-body">
-                        <p>Coming soon...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card small">
-                <div class="card-title">
-                    <h3 class="card-header">Coming soon</h3>
-                    <div class="card-body">
-                        <p>Coming soon...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card small">
-                <div class="card-title">
-                    <h3 class="card-header">Coming soon</h3>
-                    <div class="card-body">
-                        <p>Coming soon...</p>
-                    </div>    
-                </div>
-            </div>
+<section class="projects-container" id="projects">
+    <h2>Projects</h2>
+    <div class="grid-container">
+        <div class="grid-item" id="covidTracker">
+            <h3>Third-Party APIs</h3>
+            <p>
+                COVID Tracker - Stranded (Group Project)<br>
+                Collaborate together with other classmates to create an app using multiple APIs.</p>
+            <a href="https://smj3085.github.io/covid-tracker-stranded/" class="card big"></a>
+        </div>
+        <div class="grid-item" id="refactoring">
+            <h3>HTML</h3>
+            <p>Refactoring<br>Refactoring existing code to ensure a more accessible and seamless experience.</p>
+            <a href="https://smj3085.github.io/Homework1_SLEE/" class="card big"></a>
+        </div>
+        <div class="grid-item" id="refactoring">
+            <h3>Refactoring</h3>
+            <p>Refactoring existing code to ensure a more accessible and seamless experience</p>
+            <a href="https://smj3085.github.io/covid-tracker-stranded/" class="card big"></a>
+        </div>
+        
+        <div class="grid-item" id="refactoring">
+            <h3>Refactoring</h3>
+            <p>Refactoring existing code to ensure a more accessible and seamless experience</p>
+            <a href="https://smj3085.github.io/Homework1_SLEE/" class="card big"></a>
         </div>
     </div>
 </section>
