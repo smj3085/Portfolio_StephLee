@@ -65,7 +65,7 @@ nav a {
 
 .subtitle {
     display: flex;
-    height: 250px;
+    height: auto;
     width: 100%;
     padding: 25px;
     margin-bottom: 20px;
@@ -178,6 +178,10 @@ nav a {
     list-style-type: none;
 }
 
+#contactTitle {
+    color: red;
+}
+
 footer {
     flex-shrink: 0;
     padding: 10px;
@@ -214,7 +218,6 @@ nav li:hover {
 
     .subtitle {
         flex-direction: column;
-        height: auto;
     }
 
     .panel ul {
