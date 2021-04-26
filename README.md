@@ -1,11 +1,8 @@
-# Portfolio-page_SLEE
-Portfolio page
-
-
-# Week 2 Homework
+# Portfolio-page
+Stephanie Lee portfolio page
 
 # Description 
-* Creating a portfolio page using html & css. 
+* Use HTML and CSS to create a simple portfolio page.
 
 
 # Table of contents

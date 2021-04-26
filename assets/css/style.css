@@ -141,17 +141,16 @@ nav a {
     padding: 20px;
 }
 
-.content a {
-    text-decoration: none;
+/* .content a {
     color: black;
-}
+} */
 
 #covidTracker .card.big {
     background-image: url('../images/stranded_screencapture.png');
 }
 
-#refactoring .card.big {
-    background-image: url('../images/Horiseon_SLEE.png');
+#weatherDashboard .card.big {
+    background-image: url('../images/weatherdashboard_screencapture.png');
 }
 
 #codeQuiz .card.big {
@@ -204,7 +203,7 @@ nav li:hover {
 }
 
 .content a:hover {
-    color: blue;
+    font-weight: bolder;
 }
 
 @media screen and (max-width: 768px) {
@@ -226,6 +225,7 @@ nav li:hover {
 
     .panel li {
         display: block;
+        margin-bottom: 20px;
     }
 
     .grid-container {
