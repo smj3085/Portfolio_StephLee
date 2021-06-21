@@ -25,7 +25,7 @@ header {
 }
 
 h1 {
-    display: inline-block;
+    display: inline;
     font-size: 40px;
 }
 
@@ -49,8 +49,8 @@ nav ul {
 }
 
 nav li {
-    display: inline-block;
-    margin-left: 25px;
+    display: inline;
+    margin-left: 50px;
 }
 
 nav a {
@@ -58,10 +58,10 @@ nav a {
     text-decoration: none;
 }
 
-/* main {
+main {
     display: flex;
     flex-wrap: wrap;
-} */
+}
 
 .subtitle {
     display: flex;
@@ -71,6 +71,7 @@ nav a {
     margin-bottom: 20px;
     line-height: 30px;
     font-size: 20px;
+    align-items: center;
 }
 
 .subtitle img {
@@ -79,7 +80,7 @@ nav a {
     width: 200px;
     align-items: center;
     object-fit: cover;
-    margin-left: 40px;
+    margin-left: 20px;
     border: 5px solid var(--lightblue);
     border-radius: 50%;
 }
@@ -91,6 +92,19 @@ nav a {
 
 }
 
+#skills ul {
+    margin-left: 25px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    padding: 20px;
+}
+
 .projects-container {
     padding: 20px;
     margin-right: 20px;
@@ -99,7 +113,7 @@ nav a {
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     grid-gap: 25px 50px;
     margin-left: 20px;
     padding: 20px;
@@ -111,11 +125,11 @@ nav a {
 }
 
 .panel {
-    /* display: flex;
-    flex-direction: column; */
-    padding: 20px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* padding: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
     width: 100%;
     height: 100%;
     font-family:'Cabin', sans-serif;
@@ -158,7 +172,15 @@ nav a {
 }
 
 #workPlanner .card.big {
-    background-image: url('../images/workplanner_screencapture.png')
+    background-image: url('../images/workplanner_screencapture.png');
+}
+
+#noteTaker .card.big {
+    background-image: url('../images/notetaker_screencapture.png');
+}
+
+#passwordGenerator .card.big {
+    background-image: url('../images/passwordgenerator_screencapture.png');
 }
 
 .card.big {
@@ -171,24 +193,28 @@ nav a {
     background-size: 100% auto;
 }                       
 
-.panel ul {
-    display: flex;
-    justify-content: space-evenly;
+#contact-me ul {
+    /* display: flex;
+    justify-content: space-evenly; */
     list-style-type: none;
+}
+
+#contact-me li {
+    margin: 10px 0;
 }
 
 #contactTitle {
     color: red;
+    font-weight: bold;
 }
 
 footer {
     flex-shrink: 0;
     padding: 10px;
     clear: both;
-    font-family:'Cabin', sans-serif;
+    font-family:'Pacifico', sans-serif;
     text-align: center;
-    background: black;
-    color: white
+    background: var(--lightlook);
 }
 
 nav li:hover {
@@ -213,6 +239,7 @@ nav li:hover {
 
     nav li {
         display: block;
+        margin-top: 10px;
     }
 
     .subtitle {

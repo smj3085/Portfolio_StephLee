@@ -4,22 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stephanie Lee Portfolio page</title>
-  <link rel="stylesheet" href="assets/css/reset.css" />
+  <title>Stephanie Lee Portfolio</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
 
 </head>
 
 <body>
     <header>
-        <h1>Stephanie Lee</h1>
-        <nav>
+        <nav>    
             <ul>
+                <h1>Stephanie Lee</h1>
                 <li>
                     <a href="#about">About</a>
                 </li>
@@ -45,17 +44,56 @@
             I'm a Junior Web Developer based in beautiful Sydney, Australia! <br>
             My early working years were spent in the hustle and bustle of the aviation and financial services industries.<br>
             After a short break away from the working world I'm excited to embark upon a new career in programming.<br>
-            Currently, I am studying a Full-stack Bootcamp course scheduled to finish in August 2021.
+            Currently, I am studying a Full-stack Bootcamp course at the University of Sydney which is scheduled to finish in August 2021.
         </p>
     </div>
 </section>
+<section class="panel">
+    <div class="row">
+        <div class="column">
+            <h2>Technical Skills</h2>
+            <div class="content" id="skills">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>JQuery, Bootstrap</li>
+                <li>node.js</li>
+                <li>MySQL</li>
+                <li>Express</li>
+            </ul>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Contact me</h2>
+            <div class="content" id="contact-me">
+            <ul>
+                <li>
+                    <i class="fas fa-envelope"></i><span id="contactTitle"> Email:</span> <br>
+                    <a href="mailto:stephaniemjlee@gmail.com">stephaniemjlee@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fab fa-github"></i> <span id="contactTitle"> GitHub:</span><br>
+                    <a href="https://github.com/smj3085">Check out my work!</a>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin"></i><span id="contactTitle"> LinkedIn:</span><br>
+                    <a href="www.linkedin.com/in/stephanie-lee-syd">Connect with me!</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- Work section -->
 <section class="projects-container" id="projects">
     <h2>Projects</h2>
     <div class="grid-container">
         <div class="grid-item" id="covidTracker">
-            <h3>Group project: COVID Tracker - Stranded</h3>
+            <h3>COVID Tracker - Stranded</h3>
+            <h5>(Group Project)</h5>
             <p>HTML | JavaScript | APIs<br></p>
             <a href="https://github.com/smj3085/covid-tracker-stranded">GitHub repository link</a>
             <a href="https://smj3085.github.io/covid-tracker-stranded/" class="card big"></a>
@@ -87,27 +125,25 @@
             
            
         </div>
-    </div>
-</section>
 
-<!-- Add in extra contact details -->
-<section class="panel">
-    <h2>Contact me</h2>
-    <div class="content" id="contact-me">
-        <ul>
-            <li>
-                <i class="fas fa-envelope"></i><span id="contactTitle"> Email:</span> <br>
-                <a href="mailto:stephaniemjlee@gmail.com">stephaniemjlee@gmail.com</a>
-            </li>
-            <li>
-                <i class="fab fa-github"></i> <span id="contactTitle"> GitHub:</span><br>
-                <a href="https://github.com/smj3085">Check out my work!</a>
-            </li>
-            <li>
-                <i class="fab fa-linkedin"></i><span id="contactTitle"> LinkedIn:</span><br>
-                <a href="www.linkedin.com/in/stephanie-lee-syd">Connect with me!</a>
-            </li>
-        </ul>
+        <div class="grid-item" id="noteTaker">
+            <h3>Note Taker</h3>
+            <p>HTML | CSS | NodeJs <br></p>
+            <a href="https://github.com/smj3085/Note-taker">GitHub respository link</a>
+            <a href="https://fierce-castle-98892.herokuapp.com/" class="card big"></a>
+            
+           
+        </div>
+
+        <div class="grid-item" id="passwordGenerator">
+            <h3>Password Generator</h3>
+            <p>HTML | CSS | JavaScript<br></p>
+            <a href="https://github.com/smj3085/passwordGenerator">GitHub respository link</a>
+            <a href="https://smj3085.github.io/passwordGenerator/" class="card big"></a>
+            
+           
+        </div>
+
     </div>
 </section>
 
