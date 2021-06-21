@@ -17,4 +17,4 @@ https://github.com/smj3085/Portfolio_StephLee
 https://smj3085.github.io/Portfolio_StephLee/
 
 # Screenshot
-![picture](./assets/images/portfolio_screencapture.png)
+![picture](./assets/images/updatedportfolio.png)
